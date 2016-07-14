@@ -67,6 +67,54 @@ body {
   }
 }
 
+#tree_slides, #story, #fb {
+  position:fixed;
+  height:40%;
+}
+
+#tree_slides {
+  left:5%;
+  top:10%;
+  width:45%;
+  background:lightgrey;
+}
+
+img {
+  margin:auto;
+  width:100px;
+}
+
+#story{
+  left:5%;
+  top:55%;
+  width:45%;
+  background:lightgrey;
+}
+
+#fb{
+  left:55%;
+  top:55%;
+  width:40%;
+  background:lightgrey;
+}
+
+#map {
+  position:fixed;
+  left:55%;
+  top:10%;
+  width:40%;
+}
+
+// .infoWindowContent {
+//     font-size:  14px !important;
+//     border-top: 1px solid #ccc;
+//     padding-top: 10px;
+// }
+// h2 {
+//     margin-bottom:0;
+//     margin-top: 0;
+// }
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
