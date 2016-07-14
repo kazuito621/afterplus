@@ -8714,10 +8714,13 @@ button.close {
 /* line 13, ../../app/styles/main.scss */
 body {
   padding: 0;
+  background: url(/images/tree1.png) no-repeat;
+  background-size: 100% 800px;
+  opacity: 0.95;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-/* line 18, ../../app/styles/main.scss */
+/* line 21, ../../app/styles/main.scss */
 .header,
 .marketing,
 .footer {
@@ -8726,13 +8729,14 @@ body {
 }
 
 /* Custom page header */
-/* line 26, ../../app/styles/main.scss */
+/* line 29, ../../app/styles/main.scss */
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
+  background: #60902a;
   /* Make the masthead heading the same height as the navigation */
 }
-/* line 31, ../../app/styles/main.scss */
+/* line 35, ../../app/styles/main.scss */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -8740,70 +8744,97 @@ body {
   padding-bottom: 19px;
 }
 
+/* line 43, ../../app/styles/main.scss */
+.navbar {
+  background: #60902a;
+  border: none;
+}
+
+/* line 48, ../../app/styles/main.scss */
+.navbar-brand {
+  margin-left: -15px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 /* Custom page footer */
-/* line 40, ../../app/styles/main.scss */
+/* line 54, ../../app/styles/main.scss */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 46, ../../app/styles/main.scss */
+/* line 60, ../../app/styles/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 51, ../../app/styles/main.scss */
+/* line 65, ../../app/styles/main.scss */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 55, ../../app/styles/main.scss */
+/* line 69, ../../app/styles/main.scss */
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
 /* Supporting marketing content */
-/* line 62, ../../app/styles/main.scss */
+/* line 76, ../../app/styles/main.scss */
 .marketing {
   margin: 40px 0;
 }
-/* line 65, ../../app/styles/main.scss */
+/* line 79, ../../app/styles/main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
 
-/* line 70, ../../app/styles/main.scss */
-#tree_slides, #story, #fb {
+/* line 84, ../../app/styles/main.scss */
+#tree_slides, #map, #tree_story, #fb {
   position: fixed;
-  height: 40%;
+  left: 55%;
+  top: 10%;
+  border-width: 3px;
+  border-color: #0c0704;
+  width: 40%;
+  box-shadow: 5px 5px 3px grey;
 }
 
-/* line 75, ../../app/styles/main.scss */
+/* line 95, ../../app/styles/main.scss */
+#tree_story, #fb {
+  position: fixed;
+  height: 40%;
+  padding: 20px;
+}
+
+/* line 101, ../../app/styles/main.scss */
 #tree_slides {
+  position: fixed;
   left: 5%;
   top: 10%;
   width: 45%;
+  height: 300px;
   background: lightgrey;
 }
 
-/* line 82, ../../app/styles/main.scss */
+/* line 110, ../../app/styles/main.scss */
 img {
   margin: auto;
-  width: 100px;
+  height: 100%;
 }
 
-/* line 87, ../../app/styles/main.scss */
-#story {
+/* line 115, ../../app/styles/main.scss */
+#tree_story {
   left: 5%;
   top: 55%;
   width: 45%;
-  background: lightgrey;
+  background: #ecece3;
 }
 
-/* line 94, ../../app/styles/main.scss */
+/* line 122, ../../app/styles/main.scss */
 #fb {
   left: 55%;
   top: 55%;
@@ -8811,23 +8842,31 @@ img {
   background: lightgrey;
 }
 
-/* line 101, ../../app/styles/main.scss */
+/* line 129, ../../app/styles/main.scss */
 #map {
   position: fixed;
   left: 55%;
   top: 10%;
   width: 40%;
+  height: 300px;
+}
+
+/* line 137, ../../app/styles/main.scss */
+.infoWindowContent {
+  font-size: 14px !important;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 120, ../../app/styles/main.scss */
+  /* line 149, ../../app/styles/main.scss */
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 125, ../../app/styles/main.scss */
+  /* line 154, ../../app/styles/main.scss */
   .header,
   .marketing,
   .footer {
@@ -8836,13 +8875,13 @@ img {
   }
 
   /* Space out the masthead */
-  /* line 132, ../../app/styles/main.scss */
+  /* line 161, ../../app/styles/main.scss */
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 136, ../../app/styles/main.scss */
+  /* line 165, ../../app/styles/main.scss */
   .jumbotron {
     border-bottom: 0;
   }

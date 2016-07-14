@@ -1,3 +1,3 @@
 var app = angular.module('yoNgApp', [
-    'ngMap', 'ui.bootstrap'
+    'ngMap', 'ui.bootstrap', 'ngSanitize'
 ]);
